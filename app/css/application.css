@@ -1,0 +1,206 @@
+#vrds-app {
+  padding: 16px;
+}
+
+#vrds-menu .navbar-inner {
+  background: #7db9e8; /* Old browsers */
+  background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(99%,#1e5799)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* IE10+ */
+  background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */  
+}
+
+#vrds-menu .navbar-inner .brand {
+  color: #EEE;
+}
+
+#vrds-menu .navbar-inner .nav a {
+  color: #EEE;
+}
+
+#vrds-main-actions {
+  position: relative;
+  z-index: 10;
+  left: 560px;
+  top: -643px;
+  width: 340px;
+  height: 0;
+}
+
+#vrds-main-welcome {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+#vrds-main-tagline {
+  border-top: 1px solid #BCBCBC;
+  border-bottom: 1px solid #BCBCBC;
+  height: 320px;
+  background-color: #F1F1F1;
+}
+
+#vrds-main-tagline p {
+  font-size: 21px;
+  padding-top: 75px;
+  padding-left: 45px;
+  line-height: 30px;
+}
+
+#vrds-main-modules {
+  margin-bottom: 25px;
+}
+
+.vrds-main-module {
+  width: 88px;
+  padding: 15px;
+  margin: 0px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+}
+
+.vrds-main-module.learn {
+  border-top: 1px solid #1D3E8A;
+  border-left: 1px solid #1D3E8A;
+  border-right: 1px solid #1D3E8A;
+  background: #7db9e8; /* Old browsers */
+  background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(99%,#1e5799)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 99%); /* IE10+ */
+  background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+.vrds-main-module.link {
+  border-top: 1px solid #1D3E8A;
+  border-right: 1px solid #1D3E8A;
+  background: #ffb585; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffb585 0%, #eb7809 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb585), color-stop(100%,#eb7809)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffb585 0%,#eb7809 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffb585 0%,#eb7809 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffb585 0%,#eb7809 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffb585 0%,#eb7809 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb585', endColorstr='#eb7809',GradientType=0 ); /* IE6-9 */
+}
+
+.vrds-main-module.work {
+  border-top: 1px solid #1D3E8A;
+  border-right: 1px solid #1D3E8A;
+  background: #82d161; /* Old browsers */
+  background: -moz-linear-gradient(top, #82d161 0%, #328b16 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82d161), color-stop(100%,#328b16)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #82d161 0%,#328b16 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #82d161 0%,#328b16 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #82d161 0%,#328b16 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #82d161 0%,#328b16 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82d161', endColorstr='#328b16',GradientType=0 ); /* IE6-9 */
+}
+
+/* BAD AND PROBABLY HAS REDUNDANCIES */
+#vrds-account-form {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+#vrds-main-login-form {
+  -webkit-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    2px 2px 10px rgba(50, 50, 50, 0.5);
+  box-shadow:         2px 2px 10px rgba(50, 50, 50, 0.5);
+  padding: 19px 29px 29px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: 340px;
+  border: 1px solid #ACACAC;
+  text-align: center;
+}
+/* END OF BAD AND PROBABLY HAS REDUNDANCIES */
+
+#vrds-login-error {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+}
+
+#vrds-main-help {
+  margin-top: 55px;
+}
+
+.vrds-testimonial, #vrds-main-subtext {
+  padding: 20px;
+  font-size: 12px;
+}
+
+.vrds-testimonial-image, #vrds-main-subtext {
+  text-align: center;
+}
+
+.vrds-testimonial-quote {
+  margin-top: 20px;
+}
+
+#vrds-main-subtext {
+  margin-top: 142px;
+  margin-left: -50px;
+  padding: 0px;
+}
+
+#vrds-account-error, #vrds-profile-builder-message, #vrds-profile-builder-close-x, #vrds-profile-builder-close {
+  display: none;
+}
+
+#vrds-profile-builder-message {
+  width: 85%;
+  margin: 15px auto 0px auto;
+}
+
+.vrds-inline-def-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container .vrds-course-container {
+  padding-top: 32px;
+}
+
+.vrds-discovery-img-container { 
+  width: 33%;
+  float: left;
+  display: inline-block;
+}
+
+.vrds-discovery-desc {
+  width: 66%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  padding-top: 32px;
+}
+
+li .vrds-lesson-module-heading {
+}
+
+li .vrds-lesson-module-body {
+}
