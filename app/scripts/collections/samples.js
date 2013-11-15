@@ -1,18 +1,23 @@
 define([
-  'backbone',
-  'models/sample',
-  'underscore'
-], function(Backbone, Sample, _) {
-  var Samples = Backbone.Collection.extend({
-    model: Sample,
-    url: '/samples',
+    'backbone',
+    'underscore',
+    'models/sample'
+], 
+function(
+    Backbone, 
+    _,
+    Sample
+){
+    var Samples = Backbone.Collection.extend({
+        model: Sample,
+        url: '/samples',
 
-    initialize: function() {
+        initialize: function() {
 
-    }
+        }
 
-  });
+    });
 
 
-  return Samples;
+    return Samples;
 });

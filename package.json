@@ -1,13 +1,17 @@
 {
-  "name": "viridislearning-client",
+  "name": "Marionette Client Boilerplate",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
-    "express": "~3.1.0"
+    "express": "~3.1.0",
+    "underscore": "~1.4.4",
+    "bower": "~1.2.7"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-jshint": "~0.2.0",
-    "grunt-contrib-watch": "~0.3.1"
+    "grunt-contrib-watch": "~0.3.1",
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "sinon": "~1.7.3"
   }
 }

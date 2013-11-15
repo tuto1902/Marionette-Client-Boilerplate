@@ -28,4 +28,4 @@ requirejs.config({
 });
 
 
-requirejs(['vrds']);
+requirejs(['application']);

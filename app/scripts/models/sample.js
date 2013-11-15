@@ -1,12 +1,14 @@
 define([
 	'backbone'
-], function(Backbone) {
+], 
+function(
+    Backbone
+){
 	var Sample = Backbone.Model.extend({
 		urlRoot: '/sample',
 
-		defaults: {
-    }
-	});
+		defaults: {}
+    });
 
 
 	return Sample;

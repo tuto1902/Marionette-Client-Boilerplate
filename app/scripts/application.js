@@ -1,55 +1,42 @@
-define( [
-	'marionette',
-  'router',
-  'underscore',
-  'controllers/sampleController',
-  'views/app/index'
-], function(
-		Marionette,
-		Router,
-		_,
-		SampleController,
-		IndexView
-	){
+define([
+    'marionette',
+    'router',
+    'underscore',
+    'controllers/sampleController',
+    'views/app/index'
+], 
+function(
+	Marionette,
+	Router,
+	_,
+	SampleController,
+	IndexView
+){
 
-  //instantiate the app
-  var application = new Marionette.Application();
-
-  //INITIALIZERS////////////////////////////////////////////////////// 
+    //instantiate the app
+    var application = new Marionette.Application();
 
 	//router & controllers
 	application.addInitializer(function(options){
 		this.router = new Router();
-
-		this.controllers = {
+		// Add more controllers as you see fit
+		this.router.controllers = {
 			sample: new SampleController()
-		};   
-
-		this.router.controllers = this.controllers;
-	});
-	
-
-  //models
-  application.addInitializer(function(options){
-
+		};
 	});
 
 
-  //root-level regions
-  application.addInitializer(function(options){
-  	var body = $(document.body);
-  	var container = $("<div/>").attr("id", "vrds-container");
-
-  	body.append(container);
-
-  	application.addRegions({
-	    'index':  new Marionette.Region({ el: "#vrds-container" })
-	  });
-
-  	//display
-	  this.container.show(new IndexView());
-  });
-	////////////////////////////////////////////////////////////////////
+    //root-level regions
+    application.addInitializer(function(options){
+        // Add more regions to the main index.html and reflect them here as needed
+        application.addRegions({
+            'main': new Marionette.Region({ el:'#main' })
+        });
+    
+        //display the main index view
+        this.main.show(new IndexView());
+    });
+    
 
 
 	//starts upon final initializer execution completion
@@ -58,6 +45,18 @@ define( [
 	});
 
 
-  //export the app from this module
-  return application;
+    /**
+	 * Custom namespace 'myapp' is for attaching application/root-level variables;
+	 * we don't want to pollute the general global space with variables.
+	 * @type {Object}
+	 */
+    window.myapp = {};
+
+	/**
+	 * Root Application instance
+	 * @type {Application}
+	 */
+	myapp.application = application;
+
+	myapp.application.start();
 });
