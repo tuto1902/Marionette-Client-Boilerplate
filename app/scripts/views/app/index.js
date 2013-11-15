@@ -1,9 +1,11 @@
 define([
+    'marionette',
     'jquery',
     'underscore',
     'text!templates/app/index.html'
 ], 
 function(
+    Marionette,
     $, 
     _,
     indexViewTemplate
