@@ -16,10 +16,5 @@
     "backbone-amd": "~1.0.0",
     "underscore": "~1.4.4",
     "underscore-amd": "~1.4.4"
-  },
-  "devDependencies": {
-    "mocha": "1.13.0",
-    "chai": "1.8.1",
-    "sinon": "~1.6.0"
   }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="app/scripts/|app/scripts/views/app/|app/scripts/models/|app/scripts/controllers/|app/scripts/collections/" kind="src" path=""/>
+	<classpathentry excluding="views/app/|models/|controllers/|collections/" kind="src" path="app/scripts"/>
+	<classpathentry kind="src" path="app/scripts/collections"/>
+	<classpathentry kind="src" path="app/scripts/controllers"/>
+	<classpathentry kind="src" path="app/scripts/models"/>
+	<classpathentry kind="src" path="app/scripts/views/app"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
